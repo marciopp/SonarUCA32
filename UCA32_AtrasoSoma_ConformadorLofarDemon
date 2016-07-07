@@ -44,9 +44,9 @@ for i=1:M
     y(i)=r*cosd((i-1)*360/M); %distancias y dos sensores
 end
 for s=1:M
-    delay(i,s) = -(x(s)*sind(dir360)+y(s)*cosd(dir360))/c; 
+    delay(s) = -(x(s)*sind(dir360)+y(s)*cosd(dir360))/c; 
 end
-SinalEmFase = delayseq(sinal_mx,delay(i,:),fs);
+SinalEmFase = delayseq(sinal_mx,delay(:),fs);
 y=sum(SinalEmFase,2); % <- Este é o sinal conformado: y !!!
 yy=y; % preserva y em yy, pois rotinas LOFAR e DEMON utilizam y também
 %%
