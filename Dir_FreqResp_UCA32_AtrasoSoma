@@ -5,7 +5,7 @@
 * Broadside a 0º
 * Marcio Pinto Pereira - junho de 2016
 * Programado em Matlab R2016a com Phased Array Toolbox
-* Licenciado sob CC BY
+* Licenciado sob CC-BY
 ***************************************************************************
 %}
 h = phased.UCA; % Arranjo Cicular Uniforme (UCA)
