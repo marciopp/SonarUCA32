@@ -46,7 +46,7 @@ end
 for s=1:M
     delay(s) = -(x(s)*sind(dir360)+y(s)*cosd(dir360))/c; 
 end
-SinalEmFase = delayseq(sinal_mx,delay(:),fs);
+SinalEmFase = delayseq(sinal_mx,delay,fs);
 y=sum(SinalEmFase,2); % <- Este é o sinal conformado: y !!!
 yy=y; % preserva y em yy, pois rotinas LOFAR e DEMON utilizam y também
 %%
