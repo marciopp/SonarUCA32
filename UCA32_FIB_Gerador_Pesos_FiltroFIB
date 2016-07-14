@@ -95,6 +95,6 @@ for look_direction=-180:180; % direção a conformar
     PesoW(:,look_direction+181)=w; 
     % 1...32 = primeiro hidrofone
     % ... 992...1024 = 32º hidrofone
-    % Dimensao 2 é o angulo de conformação
+    % Dimensao 2 é o angulo de conformação de -180 a 180
 end
 
